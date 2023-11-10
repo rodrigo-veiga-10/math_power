@@ -1,6 +1,6 @@
 #[cfg(test)]
 mod tests {
-    use math_power::funcs::sci;
+    use rust_scientific::funcs::sci;
 
     #[test]
     fn normal_sci_not() {
