@@ -1,5 +1,5 @@
 # Rust Scientific
- This repository has functions written in rust for scientific porpuses, for now has the following functions:
+ This repository has functions written in rust for scientific porpuses, or math porpuses, for now has the following functions:
 ## Function`sci_2_num`
 
 This function is designed to convert a scientific notation string into a regular integer (`u128`). It performs a series of checks and transformations to ensure the input is valid and can be correctly converted.
