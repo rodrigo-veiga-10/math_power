@@ -1,6 +1,7 @@
 mod funcs;
 fn main() {
      //example
-     println!("{:?}",funcs::sci::sci_2_num("3.78*10^8") );
+     let result = funcs::sci::sci_2_num("1.23*10^5");
+     println!("{}", result);
 
 }
