@@ -1,0 +1,60 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Cargo test",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib"
+                ]
+            },
+            "args": []
+        },
+
+
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'math_power'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=math_power",
+                    "--package=math_power"
+                ],
+                "filter": {
+                    "name": "math_power",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'math_power'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=math_power",
+                    "--package=math_power"
+                ],
+                "filter": {
+                    "name": "math_power",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

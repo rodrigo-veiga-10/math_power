@@ -1,3 +1,6 @@
+mod funcs;
 fn main() {
-    println!("Hello, world!");
+     //example
+     println!("{:?}",funcs::sci::sci_2_num("3.78*10^8") );
+
 }
